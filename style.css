@@ -1,0 +1,158 @@
+body{
+background-color: #cccccc;
+}
+#offer{
+	font-size:12px;
+	font-family:tahoma;
+	font-weight:bold;
+}
+#heading{
+	float:left;
+	padding-top:1px;
+	font-size: 20px;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+table#promo{
+	background-color:#fff
+}
+table#navbar, #newstitle{
+	background-color:#0099cc;
+}
+table#adtable{
+	background-color:#fff;
+	height:15px;
+	border:3px solid #0099cc;
+}
+table#logotable{
+	background-color:#0099cc
+}
+table#newframe {
+border:2px solid #0099cc;
+height: 150px;
+background-color:#fff;
+}
+table#cat{
+	float:left;
+	padding:2px;
+}
+table#home {
+border:3px solid #0099cc;
+background-color:#fff;
+}
+table#phone{
+	background-color:#fff;
+	padding-top:50px;
+	padding-left:20px;
+}
+td.tdphone{
+	border-top: 151px solid white;
+}
+tr.odd{
+	background-color: #e6e6ff;
+}
+tr.even{
+	background-color: #ffffb3;
+}
+th#newtitle{
+	color:white;
+	font-size:15px;
+	font-weight:bold
+}
+ul {
+    list-style-image: url('pic/bullet.png');
+}
+p.bottompara{
+	font-size:10px;
+	text-align:center;
+}
+dl.phonedl{
+	float:left;
+	font-size: 23px;
+	font-weight: bold;
+	color:black;
+	font-family:Trebuchet MS;
+}
+dl.phonedl2{
+	float:left;
+	font-size: 30px;
+	font-weight: bold;
+	color:black;
+	font-family:Trebuchet MS;
+	padding-left:10px;
+	padding-top:10px;
+}
+dd.ddnormal{
+	font-weight: normal;
+}
+dd.dddiscount{
+	font-weight: normal;
+	color:red;
+	font-size:38px;
+	font-weight:bold;
+}
+dd.phonetitle{
+	font-weight: normal;
+}
+dt.dtphonename{
+	padding-bottom:35px;
+}
+dt.branddt{
+	padding-bottom:15px;
+}
+fieldset#field{
+	border-color: #ff9933;
+}
+img#logo{
+	padding:9px;float:left;
+}
+img.phoneimg{
+	float:left;
+}
+span#hot{
+	font-size: 30px;
+	font-weight: bold;
+	color:black;
+}
+div#offer {
+font-weight: normal;
+font-size: 18px;
+font-weight: bold;
+color:red;
+padding:1px;
+font-family:Trebuchet MS;
+}
+
+a.offerl:hover{
+	font-size:20px;
+    color: red;
+}
+
+a.offerl:visited {
+    color: #00ccff;
+}
+
+.mediumbutton {
+	background-color: #0099cc;
+	border: none;color: white;
+	padding: 8px 24px;
+	font-weight: bold;
+	cursor:pointer;
+}
+.navbutton {
+background-color: #0099cc;
+overflow: hidden;
+}
+.navbutton a {
+float: left;
+color: #FFF;
+text-align: center;
+padding: 6px 12px;
+text-decoration: none;
+font-size: 14px;
+font-weight: bold;
+}
+.navbutton a:hover, a.active {
+background-color: #fff;
+color: black;
+}
+

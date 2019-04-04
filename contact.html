@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Website title -->
+      <Title>
+         PhoneCity
+      </Title>
+	  <!-- Link Style File -->
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+
+      <script>
+      function CheckForm()
+		{
+		  
+          if (document.myform.FirstName.value == "")
+          {
+              alert("Please input your first name.");
+              return false;
+          }
+		      
+          if (document.myform.LastName.value == "")
+          {
+              alert("Please input your last name.");
+              return false;
+          }
+          if (document.myform.Email.value == "")
+          {
+              alert("Please input your email.");
+              return false;
+          }
+var email = document.myform.Email.value;
+if (email.indexOf("@")==-1)
+{
+alert("Email is invalid.");
+return false;
+}
+          if (document.myform.Address.value == "")
+          {
+              alert("Please input your address.");
+              return false;
+          }
+          if (document.myform.Suburb.value == "")
+          {
+              alert("Please input your suburb.");
+              return false;
+          }
+          if (document.myform.Postcode.value == "")
+          {
+              alert("Please input your postcode.");
+              return false;
+          }
+      }
+      </script>
+   </head>
+   <!-- Body -->
+   <body>
+      <!-- Table cotain website logo and description -->
+      <table id="logotable"  width="900" align="center">
+         <tr>
+            <td>
+               <!-- Click logo direct to homepage -->
+               <a href="index.html"><img id="logo" src="pic/logo.png" alt="Site logo"></a>
+               <!-- Website description -->
+                <h5 id="heading" >No.1 mobile phone seller in Australia. </h5>
+            </td>
+         </tr>
+      </table>
+      <!-- Free shipping offer -->
+      <table id="adtable" align="center" width="900">
+         <tr>
+
+            <th id="offer" >FREE SHIPPING TO ALL STATES (EXPIRES 30TH OF DEC)</th>
+
+         </tr>
+      </table>
+      <!-- Website navigation bar including 4 buttons -->
+      <table id="navbar" width="900"  align="center" >
+         <tr>
+            <td>
+               <div class="navbutton">
+                  <a href="index.html">Home</a>
+                  <a href="phone.html">Phones</a>
+                  <a href="search.html">Search</a>
+                  <a class="active" href="contact.html">Contact us</a>
+               </div>
+         </td>
+         </tr>
+      </table>
+      <!-- Website Main Content table -->
+      <table id="home" width="900"  align="center" >
+         <tr>
+            <td>
+               <!-- Contact detail section -->
+               <fieldset class="field">
+                  <legend>Find US</legend>
+                  <br>
+                  Name:&nbsp;&nbsp;&nbsp;&nbsp;Phone City & CO., LTD.
+                  <br>
+                  Phone:&nbsp;&nbsp;&nbsp;Number(03) 9646 5253
+                  <br>
+                  Address:&nbsp;34 Doynton Pde, Mt Waverley, VIC 3149
+               </fieldset>
+               <br>
+               <!-- Online order section -->
+               <fieldset class="field">
+                  <legend>Enquiry</legend>
+                  <br />
+                  <form name="myform" method="get"
+action="NextPage.php"
+onSubmit="return CheckForm()">
+                     <!-- Input First Name -->
+                     First Name:
+                     <br>
+                     <input type="text" name="FirstName" size="15">
+                     <br>
+                     <br>
+                     <!-- Input Last Name -->
+                     Last Name:
+                     <br>
+                     <input type="text" name="LastName" size="15">
+                     <br>
+                     <br>
+                     <!-- Input Email -->
+                     Email:
+                     <br>
+                     <input type="text" name="Email" size="15">
+                     <br>
+                     <br>
+                     <!-- Input Address -->
+                     Address:
+                     <br>
+                     <input type="text" name="Address" size="15">
+                     <br>
+                     <br>
+                     <!-- Input Suburb -->
+                     Suburb:
+                     <br>
+                     <input type="text" name="Suburb" size="15">
+                     <br>
+                     <br>
+                     <!-- Input Postcode -->
+                     Postcode:
+                     <br>
+                     <input type="text" name="Postcode" style="width:55px;" maxlength="4">
+                     <br>
+                     <br>
+                     <!-- Choose State -->
+                     State:
+                     <br>
+                     <select name="state">
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="VIC">VIC</option>
+                        <option value="WA">WA</option>
+                     </select>
+                     <br>
+                     <br>
+                     <!-- Special requirement field -->
+                     Special requirement(Optional):
+                     <br>
+                     <textarea name="Comment" style="width:175px;height:70px;"></textarea>
+                     <br>
+                     <br>
+                     <!-- Subscribe promotional email checkbox -->
+                     Would you like to receive any 
+                     <br>
+                     promotional email from us in the future?  <input type="checkbox" name="promomail" checked="checked">
+                     <br>
+                     <br>
+					 <!-- sumbit button, with cursor pointer css -->
+                     
+
+                     <input type="submit" value="Submit">
+
+                  </form>
+               </fieldset>
+               <!-- Online order End -->
+            </td>
+         </tr>
+      </table>
+      <!-- Deakin college statement -->
+      <p class="bottompara">© Deakin College. This web page has been developed as a student assignment for the unit SIT104:
+         Introduction to Web Development.
+      </p>
+   </body>
+</html>

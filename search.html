@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Website title -->
+      <Title>
+         PhoneCity
+      </Title>
+      <!-- Link Style File -->
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+   </head>
+   <!-- Body -->
+   <body>
+      <!-- Table cotain website logo and description -->
+      <table id="logotable"  width="900" align="center">
+         <tr>
+            <td>
+               <!-- Click logo direct to homepage -->
+               <a href="index.html"><img id="logo" src="pic/logo.png" alt="Site logo"></a>
+               <!-- Website description -->
+               <h5 id="heading" >No.1 mobile phone seller in Australia. </h5>
+            </td>
+         </tr>
+      </table>
+      <!-- Free shipping offer -->
+      <table id="adtable" align="center" width="900">
+         <tr>
+
+            <th id="offer" >FREE SHIPPING TO ALL STATES (EXPIRES 30TH OF DEC)</th>
+
+         </tr>
+      </table>
+      <!-- Website navigation bar including 4 buttons -->
+      <table id="navbar" width="900"  align="center" >
+         <tr>
+            <td>
+               <div class="navbutton">
+                  <a href="index.html">Home</a>
+                  <a href="phone.html">Phones</a>
+                  <a class="active" href="search.html">Search</a>
+                  <a href="contact.html">Contact us</a>
+               </div>
+         </td>
+         </tr>
+      </table>
+      <!-- Website Main Content table -->
+      <table id="home" width="900"  align="center" >
+         <tr>
+            <td>
+               <fieldset class="field">
+                  <legend>Search Products</legend>
+                  <br>
+                  <!-- search form start -->
+                  <form style="padding-left:20px;" action="result.php">
+                     <!-- Choose phone -->
+                     Phone:
+                     <br>
+                     <select name="id" size="6" style="width:175px;">
+                        <option value="1">iPhone7</option>
+                        <option value="2">iPhone8</option>
+                        <option value="3">mate10</option>
+						<option value="4">p20</option>
+						<option value="5">s9</option>
+						<option value="6">note8</option>
+                     </select>
+                     <br>
+                     <br>
+                     <!-- Search button -->
+                     <center><button class="mediumbutton">Search Products</button></center>
+                  </form>
+               </fieldset>
+            </td>
+         </tr>
+      </table>
+      <!-- Deakin college statement -->
+      <p class="bottompara">© Deakin College. This web page has been developed as a student assignment for the unit SIT104:
+         Introduction to Web Development.
+      </p>
+   </body>
+</html>
